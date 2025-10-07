@@ -1,0 +1,39 @@
+body {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+/* header {
+    transition: all 0.5s ease-in-out;
+}
+.fixed-header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+    transform: translateY(0);
+    opacity: 1;
+}
+header:not(.fixed-header) {
+    transform: translateY(0);
+    opacity: 1;
+}
+#mobile-menu{
+    z-index: 2000;
+} */
+
+.background-image{
+    background-image: url('/assets/images/feature.jpg');
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-position: center;
+}
