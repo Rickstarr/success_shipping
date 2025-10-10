@@ -17,26 +17,30 @@
 
     <!-- Nav Links -->
     <nav id="menu" class="hidden lg:flex lg:items-center space-x-8 text-xl">
-      <a href="#" class="hover:text-[#2e0077]">Home</a>
+      <a href="{{ url ('/') }}" class="hover:text-[#2e0077] ">Home</a>
       <a href="#" class="hover:text-[#2e0077]">About Us</a>
       <a href="#" class="hover:text-[#2e0077]">Our Services</a>
 
       <!-- ======= Services Dropdown ======= -->
-      <div class="relative group">
-        <button class="flex items-center hover:text-[#2e0077]">
+      <div class="relative inline-block" id="parcel-wrapper">
+        <!-- Button -->
+        <button id="parcel-btn" 
+                class="flex items-center hover:text-[#2e0077] focus:outline-none">
           Parcel
           <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M19 9l-7 7-7-7" />
           </svg>
         </button>
+
         <!-- Dropdown menu -->
-        <div
-          class="absolute z-30 mr-8 mt-8 w-50 bg-[#2e0077] text-white text-sm px-6 py-2 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-2000">
-          <a href="#" class="block px-4 py-1 hover:bg-gray-100 whitespace-nowrap">Air Parcel</a>
-          <a href="#" class="block px-4 py-1 hover:bg-gray-100 whitespace-nowrap">Sea Parcel</a>
-          <a href="#" class="block px-4 py-1 hover:bg-gray-100 whitespace-nowrap">Rail Parcel</a>
-          <a href="#" class="block px-4 py-1 hover:bg-gray-100 whitespace-nowrap">Ground Parcel</a>
+        <div id="parcel-dropdown"
+            class="absolute mt-9 w-48 bg-[#2e0077] text-white text-sm rounded-md shadow-lg
+                    hidden transition-opacity duration-300">
+          <a href="{{ url('/airparcel') }}" class="block px-4 py-2 hover:bg-gray-100 hover:text-black whitespace-nowrap">Air Parcel</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-black whitespace-nowrap">Sea Parcel</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-black whitespace-nowrap">Rail Parcel</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-black whitespace-nowrap">Ground Parcel</a>
         </div>
       </div>
       <!-- =================================== -->
@@ -52,14 +56,14 @@
      class="fixed top-0 z-30 left-0 h-screen w-2/3 pt-10 bg-[#2e0077] text-white transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden shadow-lg">
   
   <!-- Nav Links -->
-  <a href="#"
-     class="block px-6 py-4 hover:bg-blue-800 border-b border-blue-600">Home</a>
+  <a href="{{ url('/') }}"
+     class="block px-6 py-4 hover:bg-[#2e0077] border-b border-blue-600">Home</a>
 
   <a href="#"
-     class="block px-6 py-4 hover:bg-blue-800 border-b border-blue-600">About Us</a>
+     class="block px-6 py-4 hover:bg-[#2e0077] border-b border-blue-600">About Us</a>
 
   <a href="#"
-     class="block px-6 py-4 hover:bg-blue-800 border-b border-blue-600">Our Services</a>
+     class="block px-6 py-4 hover:bg-[#2e0077] border-b border-blue-600">Our Services</a>
 
   <!-- Services Dropdown -->
   <div class="border-b border-blue-600">
@@ -75,7 +79,7 @@
     </button>
 
     <div id="mobile-dropdown" class="hidden bg-[#2e0077]">
-      <a href="#" class="block px-10 py-3 list-disc text-white border-b border-blue-600">Air Parcel</a>
+      <a href="{{ url('/airparcel') }}" class="block px-10 py-3 list-disc text-white border-b border-blue-600">Air Parcel</a>
       <a href="#" class="block px-10 py-3 list-disc text-white border-b border-blue-600">Sea Parcel</a>
       <a href="#" class="block px-10 py-3 list-disc text-white border-b border-blue-600">Rail Parcel</a>
       <a href="#" class="block px-10 py-3 list-disc text-white border-b border-blue-600">Ground Parcel</a>
@@ -83,10 +87,10 @@
   </div>
 
   <a href="#"
-     class="block px-6 py-4 hover:bg-blue-800 border-b border-blue-600">Track Your Parcel</a>
+     class="block px-6 py-4 hover:bg-[#2e0077] border-b border-blue-600">Track Your Parcel</a>
 
   <a href="#"
-     class="block px-6 py-4 hover:bg-blue-800 border-b border-blue-600">Contact Us</a>
+     class="block px-6 py-4 hover:bg-[#2e0077] border-b border-blue-600">Contact Us</a>
   <div class="px-6 py-4">
     <p class="py-3">Contact Us On</p>
     <p>cyprianrichard@gmail.com</p>
@@ -107,7 +111,7 @@
     mobileMenu.classList.toggle('-translate-x-full');
   });
 
-  // Toggle Services dropdown
+  // Toggle Services dropdown for mobile
   const dropdownBtn = document.getElementById('mobile-dropdown-btn');
   const dropdownMenu = document.getElementById('mobile-dropdown');
   const arrowIcon = document.getElementById('mobile-arrow');
@@ -115,6 +119,23 @@
   dropdownBtn.addEventListener('click', () => {
     dropdownMenu.classList.toggle('hidden');
     arrowIcon.classList.toggle('rotate-180');
+  });
+
+  // Toogle Parcel dropdown for desktop
+  const btn = document.getElementById('parcel-btn');
+  const dropdown = document.getElementById('parcel-dropdown');
+  const wrapper = document.getElementById('parcel-wrapper');
+
+  // Toggle dropdown on button click
+  btn.addEventListener('click', (e) => {
+    dropdown.classList.toggle('hidden');
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!wrapper.contains(e.target)) {
+      dropdown.classList.add('hidden');
+    }
   });
 
   // window.addEventListener("scroll", function () {

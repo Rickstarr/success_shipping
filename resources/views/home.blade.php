@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<title>Home Shipping Ventures</title>
 @push('styles')
 
 @endpush
