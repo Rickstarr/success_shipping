@@ -17,8 +17,13 @@
 
     <!-- Nav Links -->
     <nav id="menu" class="hidden lg:flex lg:items-center space-x-8 text-xl">
+<<<<<<< HEAD
       <a href="{{ url ('/') }}" class="hover:text-[#2e0077] ">Home</a>
       <a href="#" class="hover:text-[#2e0077]">About Us</a>
+=======
+      <a href="#" class="hover:text-[#2e0077]">Home</a>
+      <a href="/about" class="hover:text-[#2e0077]">About Us</a>
+>>>>>>> 457c55ac148c8965ccbf400b90f3fa43c85e08cd
       <a href="#" class="hover:text-[#2e0077]">Our Services</a>
 
       <!-- ======= Services Dropdown ======= -->
