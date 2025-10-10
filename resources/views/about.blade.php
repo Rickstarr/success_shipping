@@ -171,7 +171,7 @@
                         <div class='cover mb-5'><div class="cover1"></div></div>
 
                         <div class='lg:text-lg text-md mb-2 flex justify-between '>
-                            <p>Packaging Storage</p>
+                            <p>Packaging Storag</p>
                             <p>94%</p>
                         </div>
                         <div class='cover mb-5'><div class="cover2"></div></div>
