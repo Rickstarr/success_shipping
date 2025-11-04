@@ -17,7 +17,6 @@
     <!-- <--- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    @stack('styles')
 </head>
 <body>
     <div>
@@ -29,10 +28,8 @@
 
         @include('layouts.footer')
     </div>
-
+    
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    @stack('scripts')
 </body>
 </html>

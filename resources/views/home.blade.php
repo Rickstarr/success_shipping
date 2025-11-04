@@ -120,7 +120,7 @@
                 <h1 class="text-3xl">Air Parcel</h1>
                 <hr class="border-white border-t-15 my-6 w-1/3 border border-2">
                 <button type="button" class="relative before:absolute pl-5 before:top-1/2 before:left-0 before:w-0 before:h-0.5 before:bg-white before:transition-width before:duration-300 hover:before:w-4 text-left mt-8 text-[#2e0077] font-semibold">READ MORE</button>
-            </div>
+            </div>  
         </div>
         <div class="relative">
             <div><img src="{{asset('assets/images/02.jpg')}}" alt="" srcset="" class="absolute w-full h-full object-cover"></div>
