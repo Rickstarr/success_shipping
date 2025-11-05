@@ -32,7 +32,7 @@
 
         @include('layouts.footer')
     </div>
-
+    
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="{{asset('assets/js/preloader.js')}}"></script>
