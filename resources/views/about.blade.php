@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<title>About | Success Shipping Ventures</title>
 @section('content')
 <section>
     <div>

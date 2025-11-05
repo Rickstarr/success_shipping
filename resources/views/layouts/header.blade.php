@@ -3,7 +3,7 @@
   <div class="container mx-auto flex justify-between items-center px-8">
     <!-- Brand / Logo -->
     <a href="#" class=" font-bold">
-      <img src="{{asset('assets/images/logo-shipping.png')}}" alt="logo" class="w-[200px] h-[100px] ">
+      <img src="{{asset('assets/images/logo-try-remove.png')}}" alt="logo" class="h-[100px] w-[150px] ">
     </a>
 
     <!-- Mobile menu button -->
@@ -17,13 +17,10 @@
 
     <!-- Nav Links -->
     <nav id="menu" class="hidden lg:flex lg:items-center space-x-8 text-xl">
-<<<<<<< HEAD
+
       <a href="{{ url ('/') }}" class="hover:text-[#2e0077] ">Home</a>
-      <a href="#" class="hover:text-[#2e0077]">About Us</a>
-=======
-      <a href="#" class="hover:text-[#2e0077]">Home</a>
       <a href="/about" class="hover:text-[#2e0077]">About Us</a>
->>>>>>> 457c55ac148c8965ccbf400b90f3fa43c85e08cd
+
       <a href="#" class="hover:text-[#2e0077]">Our Services</a>
 
       <!-- ======= Services Dropdown ======= -->
@@ -40,20 +37,19 @@
 
         <!-- Dropdown menu -->
         <div id="parcel-dropdown"
-            class="absolute mt-9 w-48 bg-[#2e0077] text-white text-sm rounded-md shadow-lg
-                    hidden transition-opacity duration-300">
+            class="absolute mt-9 w-48 bg-[#2e0077] text-white text-sm rounded-md shadow-lg hidden transition-opacity duration-300">
           <a href="{{ url('/airparcel') }}" class="block px-4 py-2 hover:bg-gray-100 hover:text-black whitespace-nowrap">Air Parcel</a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-black whitespace-nowrap">Sea Parcel</a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-black whitespace-nowrap">Rail Parcel</a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-black whitespace-nowrap">Ground Parcel</a>
+          <a href="{{ url('/seaparcel') }}" class="block px-4 py-2 hover:bg-gray-100 hover:text-black whitespace-nowrap">Sea Parcel</a>
+          <a href="{{ url('/roadparcel') }}" class="block px-4 py-2 hover:bg-gray-100 hover:text-black whitespace-nowrap">Road Parcel</a>
+          <a href="{{ url('/railparcel') }}" class="block px-4 py-2 hover:bg-gray-100 hover:text-black whitespace-nowrap">Rail Parcel</a>
         </div>
       </div>
       <!-- =================================== -->
 
-      <a href="#" class="hover:text-[#2e0077]">Contact</a>
+      <a href="{{ url ('/contact') }}" class="hover:text-[#2e0077]">Contact Us</a>
       
     </nav>
-    <button type="button" class="bg-[#2e0077] text-xl px-5 py-2 rounded text-white hidden lg:flex lg:items-center">Track Your Parcel</button>
+    <a href="{{ url('/tracking') }}"><button type="button" class="bg-[#2e0077] text-xl px-5 py-2 rounded text-white hidden lg:flex lg:items-center">Track Your Parcel</button></a>
   </div>
 
   <!-- Mobile Dropdown (collapsible) -->
@@ -64,7 +60,7 @@
   <a href="{{ url('/') }}"
      class="block px-6 py-4 hover:bg-[#2e0077] border-b border-blue-600">Home</a>
 
-  <a href="#"
+  <a href="{{ url('/about') }}"
      class="block px-6 py-4 hover:bg-[#2e0077] border-b border-blue-600">About Us</a>
 
   <a href="#"
@@ -84,17 +80,22 @@
     </button>
 
     <div id="mobile-dropdown" class="hidden bg-[#2e0077]">
-      <a href="{{ url('/airparcel') }}" class="block px-10 py-3 list-disc text-white border-b border-blue-600">Air Parcel</a>
-      <a href="#" class="block px-10 py-3 list-disc text-white border-b border-blue-600">Sea Parcel</a>
-      <a href="#" class="block px-10 py-3 list-disc text-white border-b border-blue-600">Rail Parcel</a>
-      <a href="#" class="block px-10 py-3 list-disc text-white border-b border-blue-600">Ground Parcel</a>
+      <nav>
+        <ul class="list-disc">
+          <li><a href="{{ url('/airparcel') }}" class="block px-10 py-3 text-white border-b border-blue-600">Air Parcel</a></li>
+          <li><a href="{{ url('/seaparcel') }}" class="block px-10 py-3 text-white border-b border-blue-600">Sea Parcel</a></li>
+          <li><a href="{{ url('/railparcel') }}" class="block px-10 py-3 text-white border-b border-blue-600">Rail Parcel</a></li>
+          <li><a href="{{ url('/roadparcel') }}" class="block px-10 py-3 text-white border-b border-blue-600">Road Parcel</a></li>
+        </ul>
+      </nav>
+      
     </div>
   </div>
 
   <a href="#"
      class="block px-6 py-4 hover:bg-[#2e0077] border-b border-blue-600">Track Your Parcel</a>
 
-  <a href="#"
+  <a href="{{ url ('/contact') }}"
      class="block px-6 py-4 hover:bg-[#2e0077] border-b border-blue-600">Contact Us</a>
   <div class="px-6 py-4">
     <p class="py-3">Contact Us On</p>

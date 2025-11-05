@@ -1,5 +1,5 @@
 @extends('layouts.app')
-<title>Home Shipping Ventures</title>
+<title>Home | Success Shipping Ventures</title>
 @push('styles')
 
 @endpush
@@ -34,15 +34,15 @@
         </div>
     </div>
 </section>
-<section class="mx-auto p-12 bg-[#f3f8fb] sm:p-20 p-8">
+<section class="mx-auto bg-[#f3f8fb] sm:p-20 p-8">
     <h1 class="text-[#8b8e9d] mb-5 font-bold text-center">OUR SERVICES</h1>
     <h2 class="text:3xl lg:text-6xl font-semibold text-center mb-10">Flexible Shipping Choices To Meet Your Requirements</h2>
 
     <!-- Swiper Slider -->
     <div class="swiper mySwiper">
-        <div class="swiper-wrapper mb-10">
+        <div class="swiper-wrapper h-[400px] mb-8">
             <div class="swiper-slide rounded-lg bg-white shadow-lg">
-                <div class="border-b border-bg-[#efefef]"><img src="{{asset('assets/images/speed.png')}}" alt="Slide 1" class="p-5 object-cover"></div>
+                <div class=" border-b border-bg-[#efefef]"><img src="{{asset('assets/images/speed.png')}}" alt="Slide 1" class="p-5 object-cover"></div>
                 <div class="p-5">
                     <h1 class="text-2xl">Warehousing</h1>
                     <p class="text-[#8f8b8b] font-semibold leading-loose mt-3">Worldwide shipping services that deliver packages and documents with speed, security, and reliability.</p>
@@ -50,7 +50,7 @@
                 <button type="button" class="w-full border-t border-bg-[#efefef] text-left p-5 hover:text-[#2e0077]">LEARN MORE</button>
             </div>
             <div class="swiper-slide rounded-lg bg-white shadow-lg">
-                <div class="border-b border-bg-[#efefef]"><img src="{{asset('assets/images/speed.png')}}" alt="Slide 1" class="p-5 object-cover"></div>
+                <div class="border-b border-bg-[#efefef]"><img src="{{asset('assets/images/speed.png')}}" alt="Slide 2" class="p-5 object-cover"></div>
                 <div class="p-5">
                     <h1 class="text-2xl">Warehousing</h1>
                     <p class="text-[#8f8b8b] font-semibold leading-loose mt-3">Worldwide shipping services that deliver packages and documents with speed, security, and reliability.</p>
@@ -58,7 +58,7 @@
                 <button type="button" class="w-full border-t border-bg-[#efefef] text-left p-5 hover:text-[#2e0077]">LEARN MORE</button>
             </div>
             <div class="swiper-slide rounded-lg bg-white shadow-lg">
-                <div class="border-b border-bg-[#efefef]"><img src="{{asset('assets/images/speed.png')}}" alt="Slide 1" class="p-5 object-cover"></div>
+                <div class="border-b border-bg-[#efefef]"><img src="{{asset('assets/images/speed.png')}}" alt="Slide 3" class="p-5 object-cover"></div>
                 <div class="p-5">
                     <h1 class="text-2xl">Warehousing</h1>
                     <p class="text-[#8f8b8b] font-semibold leading-loose mt-3">Worldwide shipping services that deliver packages and documents with speed, security, and reliability.</p>
@@ -66,7 +66,7 @@
                 <button type="button" class="w-full border-t border-bg-[#efefef] text-left p-5 hover:text-[#2e0077]">LEARN MORE</button>
             </div>
             <div class="swiper-slide rounded-lg bg-white shadow-lg">
-                <div class="border-b border-bg-[#efefef]"><img src="{{asset('assets/images/speed.png')}}" alt="Slide 1" class="p-5 object-cover"></div>
+                <div class="border-b border-bg-[#efefef]"><img src="{{asset('assets/images/speed.png')}}" alt="Slide 4" class="p-5 object-cover"></div>
                 <div class="p-5">
                     <h1 class="text-2xl">Warehousing</h1>
                     <p class="text-[#8f8b8b] font-semibold leading-loose mt-3">Worldwide shipping services that deliver packages and documents with speed, security, and reliability.</p>
@@ -74,7 +74,7 @@
                 <button type="button" class="w-full border-t border-bg-[#efefef] text-left p-5 hover:text-[#2e0077]">LEARN MORE</button>
             </div>
             <div class="swiper-slide rounded-lg bg-white shadow-lg">
-                <div class="border-b border-bg-[#efefef]"><img src="{{asset('assets/images/speed.png')}}" alt="Slide 1" class="p-5 object-cover"></div>
+                <div class="border-b border-bg-[#efefef]"><img src="{{asset('assets/images/speed.png')}}" alt="Slide 5" class="p-5 object-cover"></div>
                 <div class="p-5">
                     <h1 class="text-2xl">Warehousing</h1>
                     <p class="text-[#8f8b8b] font-semibold leading-loose mt-3">Worldwide shipping services that deliver packages and documents with speed, security, and reliability.</p>
