@@ -32,17 +32,6 @@
 
         @include('layouts.footer')
     </div>
-    <div id="custom-cursor" aria-hidden="true"></div>
-    <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center bg-white shadow-lg cursor-pointer z-50">
-        <!-- Progress ring (SVG circle) -->
-        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90">
-            <circle cx="24" cy="24" r="20" stroke="black" stroke-width="3" fill="none" opacity="0.2"></circle>
-            <circle id="progress-ring" cx="24" cy="24" r="20" stroke="#2E0077" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="126" stroke-dashoffset="126"></circle>
-        </svg>
-
-        <!-- Up arrow -->
-        <i class="fa-solid fa-arrow-up text-gray-600"></i>
-    </button>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
