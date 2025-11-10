@@ -1,9 +1,9 @@
 <!-- ===================== HEADER ===================== -->
-<header class="fixed w-full bg-white text-black shadow-md z-30" id="main-header">
-  <div class="container mx-auto flex justify-between items-center px-8">
+<header class="fixed w-full bg-white text-black shadow-md z-30 p-3" id="main-header">
+  <div class="container flex justify-between items-center px-8">
     <!-- Brand / Logo -->
     <a href="#" class=" font-bold">
-      <img src="{{asset('assets/images/logo-try-remove.png')}}" alt="logo" class="h-[100px] w-[150px] ">
+      <img src="{{asset('assets/images/logo-n1.png')}}" alt="logo" class="h-[] w-[250px] ">
     </a>
 
     <!-- Mobile menu button -->

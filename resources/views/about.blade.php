@@ -20,7 +20,7 @@
         </div>
 
         <!------------- about services ----------->
-        <div class='w-full h-full bg-white lg:px-10 px-4'>
+        <div class='w-full pb-10 bg-white lg:px-10 px-4'>
             <div>
                 <p class="text-[#8b8b8b] pt-20 mb-8">WE OFFER</p>
                 <div class="grid md:grid-cols-2">
