@@ -17,7 +17,7 @@
                         <a href="{{ url ('/about') }}"class="hover:text-gray-400 transition duration-300">About Us</a>
                     </li>
                     <li>
-                        <a href="#"class="hover:text-gray-400 transition duration-300">Our Services</a>
+                        <a href="{{ url ('/services') }}"class="hover:text-gray-400 transition duration-300">Our Services</a>
                     </li>
                     <li>
                         <a href="#"class="hover:text-gray-400 transition duration-300">Parcel</a>
@@ -31,20 +31,20 @@
             <div>
                 <h1 class='text-3xl text-white mb-10'>Get in Touch</h1>
                 <ul class='leading-loose space-y-4'> 
-                    <li>
-                        <a href="#" class='text-[#ffd700]'>(Our Headquarters)</a>
+                    <li class='text-[#ffd700]'>
+                        (Our Headquarters)
                     </li>
                     <li>
                         <a href="#" class='text-white text-base'>430 Court Road, Eltham, London, SE9 4TU, United Kingdom</a>
                     </li>
-                    <li>
-                        <a href="#" class='text-[#ffd700]'>E-mail Us:</a>
+                    <li class='text-[#ffd700]'>
+                        E-mail Us:
                     </li>
                     <li>
-                        <a href="#" class='text-white text-base hover:text-gray-400 transition duration-300'>freight@goldenexpresscourier.com</a>
+                        <a href="#" class='text-white text-base hover:text-gray-400 transition duration-300'>cyprianrichard582@gmail.com</a>
                     </li>
-                    <li>
-                        <a href="#" class='text-[#ffd700]'>Call Us:</a>
+                    <li class='text-[#ffd700]'>
+                        Call Us:
                     </li>
                     <li>
                         <a href="#" class='text-white hover:text-gray-400 transition duration-300 text-base'>+44 74 93 44 6915</a>

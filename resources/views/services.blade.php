@@ -1,8 +1,9 @@
 @extends('layouts.app')
+<title>Our Services | Success Shipping Ventures</title>
 @section('content')
 <section>
     <div class="md:w-full h-[450px] relative">
-        <img src="{{asset ('assets/images/image1.jpg')}}" alt="" class="object-cover absolute w-full h-full">
+        <img src="{{asset ('assets/images/aboutus.jpg')}}" alt="" class="object-cover absolute w-full h-full">
         <div class="relative pt-[16em] mx-10">
             <div class="flex mb-5">
                 <div class="flex">
@@ -159,7 +160,7 @@
         </div>
         <div class="p-5 hover:text-white text-[#80939F] rounded-md border hover:border-[#2E0077] border-[#092E4F] border-4 pb-7">
            <div class="text-center mb-5 pt-10">
-                <h1 class="text-xl font-semibold mb-4">BASIC</h1>
+                <h1 class="text-xl font-semibold mb-4">PLATINUM</h1>
                 <p class="text-4xl font-bold mb-1">$3,430.00</p>
                 <p class="text-base">for single product</p>
             </div>
@@ -175,7 +176,7 @@
         </div>
         <div class="p-5 hover:text-white text-[#80939F] rounded-md border hover:border-[#2E0077] border-[#092E4F] border-4 pb-7">
             <div class="text-center mb-5 pt-10">
-                <h1 class="text-xl font-semibold mb-4">BASIC</h1>
+                <h1 class="text-xl font-semibold mb-4">GOLD</h1>
                 <p class="text-4xl font-bold mb-1">$9,320.00</p>
                 <p class="text-base">for single product</p>
             </div>

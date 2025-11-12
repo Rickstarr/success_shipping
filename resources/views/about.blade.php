@@ -6,7 +6,7 @@
 
         <!-------------- about start ------------>
         <div class="w-full h-[450px] relative">
-            <img src="{{asset ('assets/images/image1.jpg')}}" alt="" class="object-cover absolute w-full h-full">
+            <img src="{{asset ('assets/images/aboutus2.jpg')}}" alt="" class="object-cover absolute w-full h-full">
             <div class="relative pt-[16em] mx-10">
                 <div class="flex mb-5">
                     <div class='text-[#2e0077] bg-[#2e0077] border border-r border-2 border-[#2e0077] w-[6px] mr-5'>i</div>
