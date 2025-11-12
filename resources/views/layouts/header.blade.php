@@ -19,9 +19,8 @@
     <nav id="menu" class="hidden lg:flex lg:items-center space-x-8 text-xl">
 
       <a href="{{ url ('/') }}" class="hover:text-[#2e0077] ">Home</a>
-      <a href="/about" class="hover:text-[#2e0077]">About Us</a>
-
-      <a href="#" class="hover:text-[#2e0077]">Our Services</a>
+      <a href="{{ url ('/about') }}" class="hover:text-[#2e0077]">About Us</a>
+      <a href="{{ url ('/services') }}" class="hover:text-[#2e0077]">Our Services</a>
 
       <!-- ======= Services Dropdown ======= -->
       <div class="relative inline-block" id="parcel-wrapper">

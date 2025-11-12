@@ -20,7 +20,7 @@
         </div>
 
         <!------------- about services ----------->
-        <div class='w-full h-full bg-white lg:px-10 px-4'>
+        <div class='w-full pb-10 bg-white lg:px-10 px-4'>
             <div>
                 <p class="text-[#8b8b8b] pt-20 mb-8">WE OFFER</p>
                 <div class="grid md:grid-cols-2">
@@ -67,7 +67,7 @@
         </div>
 
         <!-- about processes -->
-        <div class='bg-[#030f27] mt-10 p-10 lg:p-20'>
+        <div class='bg-[#030f27] p-10 pt-20 lg:p-20'>
             <div class='text-white text-center mb-10 justify-center'>
                 <h1 class='text-lg mb-5'>OUR PROCESSES</h1>
                 <h1 class='md:text-5xl text-3xl font-bold'>How We Handle Our Services.</h1>

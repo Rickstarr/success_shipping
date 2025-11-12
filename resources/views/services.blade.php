@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<title>Our Services | Success Shipping Ventures</title>
 @section('content')
 <section>
     <div class="md:w-full h-[450px] relative">
