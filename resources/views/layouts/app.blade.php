@@ -20,6 +20,9 @@
     @stack('styles')
 </head>
 <body>
+    <div id="preloader">
+      <div class="loader w-16 h-16 bg-[#2e0077]"></div>
+    </div>
     <div>
         @include('layouts.header')
 
@@ -248,6 +251,11 @@
             })();
         </script>
 
+        // // Smooth scroll to top on click
+        // btn.addEventListener('click', () => {
+        //     window.scrollTo({ top: 0, behavior: 'smooth' });
+        // });
+    </script>    
     @stack('scripts')
 </body>
 </html>

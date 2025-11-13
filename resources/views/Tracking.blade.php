@@ -13,15 +13,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <section>
-    <header class="fixed w-full bg-white text-black shadow-md z-30" id="main-header">
+    <header class="fixed w-full bg-white text-black shadow-md z-30 p-3" id="main-header">
         <div class="container flex justify-between lg:px-8">
             <!-- Brand / Logo -->
             <a href="#" class=" font-bold">
-                <img src="{{asset('assets/images/logo-shipping.png')}}" alt="logo" class="lg:w-[200px] lg:h-[100px] w-[300px] h-[140px] ">
+                <img src="{{asset('assets/images/logo-n1.png')}}" alt="logo" class="w-[200px]">
             </a>
 
             <div>
-                <h1 class="text-[#2e0077] font-semibold text-4xl lg:text-xl mt-7"><a href="{{ url('/') }}">HOME</a></h1>
+                <h1 class="text-[#2e0077] font-semibold text-4xl lg:text-xl"><a href="{{ url('/') }}">HOME</a></h1>
             </div>
         </div>
     </header>
@@ -31,7 +31,7 @@
             <div class="absolute inset-0 bg-white/40"></div>
             <div class="relative z-10 h-full pl-10 mt-[60%] md:mt-[20%] lg:mt-[15%]">
                 <div class="flex text-center">
-                    <p class="text-[#2e0077] text-3xl lg:text-md px-6 font-bold">Monitoring your shipments until pick-up is easy with us. Upon registering a package, cargo, or consignment, a tracking identification number <span class="text-red-600">(i.e NG5QUK09087)</span> will be issued to your shipment. To determine the precise status and location of your shipment, enter this unique numbers into the box below.</p>
+                    <p class="text-[#2e0077] text-2xl lg:text-sm px-6 font-bold">Monitoring your shipments until pick-up is easy with us. Upon registering a package, cargo, or consignment, a tracking identification number <span class="text-red-600">(i.e NG5QUK09087)</span> will be issued to your shipment. To determine the precise status and location of your shipment, enter this unique numbers into the box below.</p>
                 </div>
                 <div class="flex gap-2 mt-9 items-center justify-center">
                     <input type="alphabet" name="Tracking ID" id="" placeholder="ENTER TRACKING ID" class=" py-3 rounded border border-[#2e0077] border-2px px-9 text-center">

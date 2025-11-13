@@ -10,6 +10,7 @@ use App\Http\Controllers\RoadParcelController;
 use App\Http\Controllers\RailParcelController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\TrackingController;
+use App\Http\Controllers\ServicesController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -22,3 +23,4 @@ Route::get('/roadparcel', [RoadParcelController::class, 'RoadParcel'])->name('ro
 Route::get('/railparcel', [RailParcelController::class, 'RailParcel'])->name('railparcel');
 Route::get('/contact', [ContactUsController::class, 'ContactUs'])->name('contact us');
 Route::get('/tracking', [TrackingController::class, 'Tracking'])->name('tracking');
+Route::get('/services', [ServicesController::class, 'Services'])->name('services');

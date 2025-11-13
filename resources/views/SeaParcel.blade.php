@@ -5,7 +5,7 @@
 @endpush
 @section('content')
 <section>
-    <div class="relative w-full h-[500px] bg-cover bg-center bg-[url('{{asset('assets/images/sea.jpg')}}')] pt-8">
+    <div class="relative w-full h-[500px] bg-cover bg-center bg-[url('{{asset('assets/images/sea-parcel.jpg')}}')] pt-8">
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="relative z-10 h-full pl-10 mt-[60%] md:mt-[30%] lg:mt-[20%] pt-10">
             <div class="flex">
