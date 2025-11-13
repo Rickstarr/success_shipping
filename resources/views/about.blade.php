@@ -67,7 +67,7 @@
         </div>
 
         <!-- about processes -->
-        <div class='bg-[#030f27] mt-10 p-10 lg:p-20'>
+        <div class='bg-[#030f27] p-10 pt-20 lg:p-20'>
             <div class='text-white text-center mb-10 justify-center'>
                 <h1 class='text-lg mb-5'>OUR PROCESSES</h1>
                 <h1 class='md:text-5xl text-3xl font-bold'>How We Handle Our Services.</h1>

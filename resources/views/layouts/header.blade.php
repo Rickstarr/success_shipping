@@ -20,10 +20,9 @@
     <!-- Nav Links -->
     <nav id="menu" class="hidden lg:flex lg:items-center space-x-8 text-xl"> 
 
-      <a href="{{ url ('/') }}" class="hover:text-[#2e0077] active:text-[#2e0077] focus:text-[#2e0077] text-black header-nav">Home</a>
-      <a href="{{ url ('/about') }}" class="hover:text-[#2e0077] text-black header-nav">About Us</a>
-
-      <a href="{{ url ('/services') }}" class="hover:text-[#2e0077] text-black header-nav">Our Services</a>
+      <a href="{{ url ('/') }}" class="hover:text-[#2e0077] ">Home</a>
+      <a href="{{ url ('/about') }}" class="hover:text-[#2e0077]">About Us</a>
+      <a href="{{ url ('/services') }}" class="hover:text-[#2e0077]">Our Services</a>
 
       <!-- ======= Services Dropdown ======= -->
       <div class="relative inline-block header-nav" id="parcel-wrapper">
